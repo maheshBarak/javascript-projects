@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mukta&family=poppins&family=Roboto:wght@300;400;500;700&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: #31cfc4;
+    border: 4px solid black;
+    position: relative;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 4px;
+    font-family: 'poppins', cursive;
+    color: rgb(0, 0, 0);
+}
+
+.secHand {
+    position: absolute;
+    top: 50%;
+    border-top: 4px solid rgb(3, 84, 92);
+    width: 110px;
+    left: 50%;
+    transform: rotate(270deg);
+    transform-origin: left;
+}
+
+.minHand {
+    position: absolute;
+    top: 50%;
+    border-top: 4px solid rgb(0, 26, 93);
+    width: 100px;
+    left: 50%;
+    transform: rotate(270deg);
+    transform-origin: left;
+}
+
+.hrHand {
+    position: absolute;
+    top: 50%;
+    border-top: 4px solid rgb(255, 0, 0);
+    width: 80px;
+    left: 50%;
+    transform: rotate(270deg);
+    transform-origin: left;
+}

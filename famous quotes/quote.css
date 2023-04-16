@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Lato&family=Mukta&family=Nunito:wght@400;500&family=Open+Sans:wght@400;500&family=Roboto:wght@300;400;500;700&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("quotes.jpg");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container {
+    padding: 20px;
+    margin-block: 50px;
+    width: 70%;
+    margin-inline: auto;
+    background: linear-gradient(to right, rgba(0, 67, 84, 0.547), rgba(0, 67, 84, 0.508));
+    box-shadow: 30px 15px rgba(4, 51, 51, 0.507);
+
+}
+
+.navBar {
+    transform: translateX(25%);
+    margin-top: 15px;
+    padding: 10px 40px;
+    position: relative;
+}
+
+i {
+    position: absolute;
+}
+
+.fa-quote-left {
+    left: 50px;
+    top: -15px;
+}
+
+.fa-quote-right {
+    left: 436px;
+    bottom: -15px;
+}
+
+h1 {
+    padding: 10px 30px;
+    display: inline;
+    border: 2px solid black;
+    padding-inline: 30px;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 3rem;
+    border-radius: 20px;
+    background-color: #fad054;
+    box-shadow: 30px 15px rgb(4, 51, 51);
+
+}
+
+.quotes {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quote-Box {
+    padding: 19px 35px;
+    background-color: #fad054;
+    border-radius: 20px;
+    box-shadow: 30px 15px rgb(4, 51, 51);
+    margin-block: 5px;
+}
+
+.quot {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.quote-Box h4 {
+    text-align: end;
+    font-family: 'Mukta', sans-serif;
+}
