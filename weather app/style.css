@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@300&family=Poppins:wght@100;200;300;400;600;700&family=Proza+Libre&family=Rampart+One&family=Roboto+Mono:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&family=Rubik&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: #222;
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 470px;
+    background: linear-gradient(90deg, rgb(24, 25, 118), rgb(2, 46, 158));
+    color: #fff;
+    margin: 50px auto 50px;
+    border-radius: 10px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search .btn {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sec1 .text {
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.temp {
+    font-family: 'Shantell Sans', cursive;
+}
+
+.weather-icon {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500px;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400px;
+    margin-bottom: 10px;
+}
+
+.weather h4 {
+    margin-block: 30px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.details {
+    width: 100%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    /* background-color: #fff; */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.col img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+p {
+    color: #3a3939;
+}
+
+.humidity,
+.wind,
+.cloud,
+.uv {
+    font-size: 28px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorFOund {
+    width: 100%;
+    display: none;
+}
+
+.errorFOund img {
+    width: 85%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.errorFOund h2 {
+    font-family: 'Shantell Sans', cursive;
+    margin-block: 30px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.all {
+    display: none;
+    width: 100%;
+}
+
+.details {}

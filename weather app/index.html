@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherToday</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input class="inputCity" type="text" placeholder="Enter City" />
+        <button class="btn">
+          <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
+        </button>
+      </div>
+      <div class="errorFOund">
+        <img src="images/404.png" alt="" />
+        <h2 class="invalidCity">Invalid City Name</h2>
+      </div>
+      <div class="all">
+        <div class="weather">
+          <h2 class="city">New Delhi</h2>
+          <section class="sec2">
+            <h1 class="temp">22 °C</h1>
+          </section>
+          <section class="sec1">
+            <img src="" class="icon" />
+            <h3 class="text">cloudy</h3>
+          </section>
+          <h4 class="date">date</h4>
+        </div>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div class="para">
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div class="para">
+              <p class="wind">50%</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/clouds.png" alt="" />
+            <div class="para">
+              <p class="cloud">50%</p>
+              <p>cloud</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/uv (2).png" alt="" />
+            <div class="para">
+              <p class="uv">50%</p>
+              <p>UV index</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
