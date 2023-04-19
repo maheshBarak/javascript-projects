@@ -1,4 +1,4 @@
-const api_key = "3c70c527eemshcdb2e55974c39e6p1a8585jsnd97a0073dbd4";
+const api_key = "3c70c527eemshcdb2e55974c39e6p1a8585jsnd97a0073dbd40";
 
 let city = "new-delhi";
 const api_url = `https://weatherapi-com.p.rapidapi.com/forecast.json?rapidapi-key=${api_key}&q=${city}`;
