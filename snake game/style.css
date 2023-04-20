@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@300&family=Poppins:wght@100;200;300;400;600;700&family=Proza+Libre&family=Rampart+One&family=Roboto+Mono:wght@100;200;300;400&family=Roboto:wght@100;300;400;500&family=Rubik&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+
+.header {
+    padding: 20px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header section .logo-png {
+    width: 80px;
+    height: 70px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name h1 {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.5rem;
+}
+
+.game-score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.score-png {
+    width: 80px;
+    height: 30px;
+}
+
+.score {
+    font-size: 1.5rem;
+}
+
+#board {
+    margin: 20px 0;
+    border: 7px solid red;
+    color: rgb(255, 136, 0);
+}
