@@ -79,7 +79,7 @@ body {
 }
 
 .temp {
-    font-family: 'Shantell Sans', cursive;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .weather-icon {
@@ -96,11 +96,23 @@ body {
     font-size: 45px;
     font-weight: 400px;
     margin-bottom: 10px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .weather h4 {
     margin-block: 30px;
-    font-family: 'Shantell Sans', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+
+.area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.area h4 {
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .details {

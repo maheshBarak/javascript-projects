@@ -1,4 +1,4 @@
-const api_key = "3c70c527eemshcdb2e55974c39e6p1a8585jsnd97a0073dbd40";
+const api_key = "3c70c527eemshcdb2e55974c39e6p1a8585jsnd97a0073dbd4";
 
 let city = "new-delhi";
 const api_url = `https://weatherapi-com.p.rapidapi.com/forecast.json?rapidapi-key=${api_key}&q=${city}`;
@@ -17,7 +17,7 @@ async function fetchApi(city) {
   );
 
   const jsonData = await response.json();
-  // console.log(jsonData);
+  //  console.log(jsonData.location);
   //  console.log(typeof response.status);
 
   if (response.status === 400) {
@@ -30,18 +30,24 @@ async function fetchApi(city) {
     errorFOund.style.display = "none";
     all.style.display = "block";
 
+    document.querySelector(".city").innerHTML = jsonData.location.name + ", ";
+    document.querySelector(".region").innerHTML = jsonData.location.region;
+
     document.querySelector(".temp").innerHTML =
       Math.round(jsonData.current.temp_c) + "°C";
-    document.querySelector(".city").innerHTML = jsonData.location.name;
-    document.querySelector(".text").innerHTML = jsonData.current.condition.text;
+
     document.querySelector(".icon").src = jsonData.current.condition.icon;
+    document.querySelector(".text").innerHTML = jsonData.current.condition.text;
+
     document.querySelector(".date").innerHTML = jsonData.location.localtime;
+
     document.querySelector(".humidity").innerHTML =
       jsonData.current.humidity + "%";
-    document.querySelector(".cloud").innerHTML = jsonData.current.cloud;
-    document.querySelector(".uv").innerHTML = jsonData.current.uv;
     document.querySelector(".wind").innerHTML =
       jsonData.current.wind_kph + "km/h";
+
+    document.querySelector(".cloud").innerHTML = jsonData.current.cloud;
+    document.querySelector(".uv").innerHTML = jsonData.current.uv;
   }
 }
 
